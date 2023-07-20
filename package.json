@@ -12,6 +12,7 @@
   "author": "VITALISED (Will)",
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "typescript": "^5.1.6"
   },
   "dependencies": {
