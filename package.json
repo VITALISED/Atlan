@@ -1,0 +1,20 @@
+{
+  "name": "atlan",
+  "version": "1.0.0",
+  "description": "Custom AtlasBroker Implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "main": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "VITALISED (Will)",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
