@@ -1,8 +1,14 @@
 import { Application } from "express";
-import { default as SubmitRouter } from "./submit/index"
+import { SubmitRouter } from "./submit/index"
+import { QueryRouter } from "./query";
+import { DebugRouter } from "./debug";
+import { ReportRouter } from "./report";
 
 export default void function(app: Application)
 {
-    app.use("/", require("./blobserve"))
+    app.get("/", require("./blobserve"))
     app.use("/submit", SubmitRouter)
+    app.use("/query", QueryRouter)
+    app.use("/debug", DebugRouter)
+    app.use("/report", ReportRouter)
 }

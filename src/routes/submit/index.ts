@@ -10,4 +10,4 @@ SubmitRouter.route("/monument")
 SubmitRouter.route("/contribution")
 SubmitRouter.route("/settlement")
 
-export { SubmitRouter as default };
+export { SubmitRouter };
