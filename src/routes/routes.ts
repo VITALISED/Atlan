@@ -3,10 +3,11 @@ import { SubmitRouter } from "./submit/index"
 import { QueryRouter } from "./query";
 import { DebugRouter } from "./debug";
 import { ReportRouter } from "./report";
+import { BlobServe } from "./blobserve";
 
-export default void function(app: Application)
+export function Routes(app: Application)
 {
-    app.get("/", require("./blobserve"))
+    app.get("/", BlobServe)
     app.use("/submit", SubmitRouter)
     app.use("/query", QueryRouter)
     app.use("/debug", DebugRouter)
